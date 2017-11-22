@@ -1,5 +1,3 @@
-import com.sun.tools.doclets.formats.html.SourceToHTMLConverter;
-
 class Solution {
     void inOrder(TreeNode n) {
         Node temp;
@@ -12,11 +10,13 @@ class Solution {
             if (temp.right != null) q.enqueue(temp.right);
         }
     }
+
     class TreeNode {
         Object data;
         TreeNode left;
         TreeNode right;
     }
+
     class Queue {
         Node head;
 
@@ -29,6 +29,7 @@ class Solution {
             n.next = head;
             head = n;
         }
+
         Object dequeue() {
             if (head == null) return null;
             return head.data;
@@ -36,6 +37,7 @@ class Solution {
         boolean isEmpty() {
             return head == null;
         }
+
         class Node {
             Object data;
             Node next;
