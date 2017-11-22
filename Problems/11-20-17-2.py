@@ -8,3 +8,4 @@ def triple_step(n):
         return 0
     else:
         return 1 + triple_step(n - 1) + triple_step(n - 2) + triple_step(n - 3)
+    
