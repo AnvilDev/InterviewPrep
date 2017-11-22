@@ -1,9 +1,16 @@
+import com.sun.tools.doclets.formats.html.SourceToHTMLConverter;
+
 class Solution {
     void inOrder(TreeNode n) {
+        Node temp;
         Queue q = new Queue();
-        
-        
-
+        q.enqueue(n);
+        while (!q.isEmpty()) {
+            temp = q.dequeue();
+            System.out.print(temp.data);
+            if (temp.left != null) q.enqueue(temp.left);
+            if (temp.right != null) q.enqueue(temp.right);
+        }
     }
     class TreeNode {
         Object data;
