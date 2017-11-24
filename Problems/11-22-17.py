@@ -20,7 +20,7 @@ def reduce_tree(node, minumum, maximum):
                 node.left = reduce_tree(node.left, minumum, maximum)
         return node
 
-class Node:
+class Node(object):
     """This class defines a node in a tree."""
     def __init__(self, data, left, right):
         self.data = data
