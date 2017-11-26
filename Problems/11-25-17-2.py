@@ -1,4 +1,4 @@
-def twoSum(nums, target):
+def two_sum(nums, target):
     """
     O(n) solution to find the indeces of two numbers in a list
     that add up to a certain target
