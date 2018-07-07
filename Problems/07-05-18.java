@@ -1,4 +1,5 @@
 class Solution {
+    // Solves the longest absolute path problem from LeetCode.
     public int lengthLongestPath(String input) {
         HashMap<Integer, Integer> lengthAtDepth = new HashMap<>(input.length());
         lengthAtDepth.put(-1, 0);
